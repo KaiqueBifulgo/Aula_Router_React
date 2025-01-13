@@ -31,7 +31,6 @@ export const useFetch = (url) => {
             } catch (error) {
 
                 setError("Houve algum erro")
-                console.log(error);
 
             }
            

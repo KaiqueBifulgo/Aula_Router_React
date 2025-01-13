@@ -9,6 +9,9 @@ import ErrorPage from './routes/ErrorPage.jsx'
 
 import Home from './routes/Home.jsx'
 
+// ROTA DINAMICA
+import Products from './routes/Products.jsx'
+
 //CONFIGURANDO ROUTER
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom"
 
@@ -27,6 +30,11 @@ const router = createBrowserRouter ([
       {
         path: "nomes",
         element: <Nomes/>
+      },
+      // ROTA DINAMICA
+      {
+        path: "products/:id",
+        element: <Products/>
       }
     ]
   },
