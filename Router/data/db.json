@@ -1,0 +1,24 @@
+{
+    "products": [
+        {
+            "item": "Ssd",
+            "preço": "a partir de 449",
+            "id": 5
+        },
+        {
+            "item": "Funko",
+            "preço": "a partir de 90",
+            "id": 6
+        },
+        {
+            "item": "Caneca personalizada",
+            "preço": "50",
+            "id": 7
+        },
+        {
+            "item": "HQs",
+            "preço": "a partir de 45",
+            "id": 8
+        }
+    ]
+}
