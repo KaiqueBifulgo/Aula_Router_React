@@ -22,7 +22,6 @@ const Home = () => {
             <Link to={`/products/${item.id}`}>Detalhes</Link>
           </li>
         ))}
-
       </ul>
     </div>
   )

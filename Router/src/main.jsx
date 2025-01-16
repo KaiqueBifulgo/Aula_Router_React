@@ -12,6 +12,12 @@ import Home from './routes/Home.jsx'
 // ROTA DINAMICA
 import Products from './routes/Products.jsx'
 
+// NESTED ROUTE
+import Info from './routes/Info.jsx'
+
+// SEARCH
+import Search from './routes/Search.jsx'
+
 //CONFIGURANDO ROUTER
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom"
 
@@ -35,6 +41,15 @@ const router = createBrowserRouter ([
       {
         path: "products/:id",
         element: <Products/>
+      },
+      // NESTED ROUTE
+      {
+        path: "products/:id/info",
+        element: <Info/>
+      },
+      {
+        path: "",
+        element: <Search/>
       }
     ]
   },
