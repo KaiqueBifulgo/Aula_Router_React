@@ -1,15 +1,15 @@
-import {useFetch} from "./Hooks/useFetch"
+import {useFetch} from "../Hooks/useFetch"
 
 import { Link, useSearchParams} from "react-router-dom";
 
 
 const Search = () => {
 
-    const searchP = useSearchParams();
+    const [searchParams] = useSearchParams();
 
-    const url = "http://localhost:3000/products?" + searchP;
+    const url = "http://localhost:3000/products/?" + searchParams;
 
-     const {data: items} = useFetch(url);
+    const {data: items} = useFetch(url);
 
   return (
     <div>

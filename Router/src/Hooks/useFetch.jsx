@@ -30,8 +30,10 @@ export const useFetch = (url) => {
             setData(json);
             } catch (error) {
 
-                setError("Houve algum erro")
+                setError(error.message || "Houve algum erro")
 
+            } finally {
+                setLoading(false);
             }
            
         }

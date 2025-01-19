@@ -19,7 +19,7 @@ import Info from './routes/Info.jsx'
 import Search from './routes/Search.jsx'
 
 //CONFIGURANDO ROUTER
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom"
 
 
 const router = createBrowserRouter ([
@@ -48,8 +48,12 @@ const router = createBrowserRouter ([
         element: <Info/>
       },
       {
-        path: "",
+        path: "search",
         element: <Search/>
+      },
+      {
+        path: "teste",
+        element: <Navigate to="/" />
       }
     ]
   },
